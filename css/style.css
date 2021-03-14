@@ -1659,7 +1659,7 @@ h2 {
 .hide-list {
   width: 20px;
   height: 40px;
-  position: relative;
+  position: absolute;
   z-index: 30;
   left: auto;
   right: -20px;
