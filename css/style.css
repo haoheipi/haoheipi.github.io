@@ -643,7 +643,7 @@
   display: block;
 }
 .nav-right {
-  width: 300px;
+  width: 420px;
   height: 100%;
   background: #fff;
   border-right: 1px solid #e5e8ec;
@@ -1659,7 +1659,7 @@ h2 {
 .hide-list {
   width: 20px;
   height: 40px;
-  position: absolute;
+  position: relative;
   z-index: 30;
   left: auto;
   right: -20px;
