@@ -1757,7 +1757,7 @@ img.pswp__img {
     font: 400 15px/1 "Open Sans", "Hiragino Sans GB", sans-serif;
   }
   .nav {
-    width: 492px;
+    width: 392px;
   }
   .nav.fullscreen {
     margin-left: -492px;
@@ -1773,7 +1773,7 @@ img.pswp__img {
     font-size: 16px;
   }
   .nav-right {
-    width: 390px;
+    width: 292px;
   }
   .nav-right .title-list form span #tagswitch:checked +#tagsWitchIcon:after {
     top: 9px;
