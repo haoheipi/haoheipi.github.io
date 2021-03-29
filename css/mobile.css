@@ -29,10 +29,10 @@
     top: 9px;
   }
   .nav-right .title-list nav a .post-title {
-    font-size: 15px;
+    font-size: 13px;
   }
   .nav-right .title-list nav a .post-date {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 1366px) {
