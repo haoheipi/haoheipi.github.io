@@ -581,7 +581,7 @@
 }
 .nav-left ul li {
   line-height: 40px;
-  text-align: right;
+  text-align: center;
   border-bottom: 1px solid #fff;
   cursor: pointer;
 }
@@ -602,8 +602,8 @@
   box-shadow: inset 165px 0 0 #fff;
 }
 .nav-left ul li>div>.fold {
-  left: 0px;
-  font-size: 0.6em;
+  left: 4px;
+  font-size: 0.7em;
   position: absolute;
   transition: transform 0.3s;
 }
