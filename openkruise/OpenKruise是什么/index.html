@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>OpenKruise是什么 | 码农记录</title>
+  <title>OpenKruise 是什么 | 码农记录</title>
   <meta name="keywords" content="">
-  <meta name="description" content="OpenKruise是什么 | 码农记录">
+  <meta name="description" content="OpenKruise 是什么 | 码农记录">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="do what i think">
 <meta property="og:type" content="website">
@@ -176,7 +176,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="2">
-<input type="hidden" id="yelog_site_word_count" value="769">
+<input type="hidden" id="yelog_site_word_count" value="808">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -238,7 +238,7 @@
            href="/openkruise/OpenKruise%E6%98%AF%E4%BB%80%E4%B9%88/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="OpenKruise是什么">OpenKruise是什么</span>
+            <span class="post-title" title="OpenKruise 是什么">OpenKruise 是什么</span>
             <span class="post-date" title="2021-03-29 00:01:45">2021/03/29</span>
         </a>
         
@@ -262,7 +262,7 @@
     <div class="pjax">
         <article id="post-openkruise/OpenKruise是什么" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">OpenKruise是什么</h1>
+        <h1 class="article-title">OpenKruise 是什么</h1>
     
     <div class="article-meta">
         
@@ -282,12 +282,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-03-30 00:27:50'>2021-03-29 00:01</time>
+            发布时间 : <time class="date" title='最后更新: 2021-03-30 00:36:06'>2021-03-29 00:01</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:692</span>
+        <span>字数:694</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -306,7 +306,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD"><span class="toc-text">核心功能</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CRD%E5%88%97%E8%A1%A8"><span class="toc-text">CRD列表</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9E%B6%E6%9E%84"><span class="toc-text">架构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD"><span class="toc-text">核心功能</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CRD-%E5%88%97%E8%A1%A8"><span class="toc-text">CRD 列表</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -326,19 +326,20 @@
 <ul>
 <li><a target="_blank" rel="noopener" href="https://openkruise.io/">OpenKruise 官网</a></li>
 <li><a target="_blank" rel="noopener" href="https://github.com/openkruise/kruise">GitHub 项目地址</a></li>
-<li><a target="_blank" rel="noopener" href="http://dockone.io/article/58872">OpenKruise：阿里巴巴 双11 全链路应用的云原生部署基座</a></li>
+<li><a target="_blank" rel="noopener" href="http://dockone.io/article/58872">OpenKruise：阿里巴巴双 11 全链路应用的云原生部署基座</a></li>
 </ul>
+<h1 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h1><p><img src="https://imagehaoheipi.oss-cn-beijing.aliyuncs.com/img/20210330003421.png"></p>
 <h1 id="核心功能"><a href="#核心功能" class="headerlink" title="核心功能"></a>核心功能</h1><ul>
 <li><p>原地升级：原地升级是一种可以避免删除、新建 Pod 的升级镜像能力。它比原生 Deployment/StatefulSet 的重建 Pod 升级更快、更高效，并且避免对 Pod 中其他不需要更新的容器造成干扰</p>
 </li>
-<li><p>Sidecar 管理：支持在一个单独的 CR 中定义sidecar 容器，OpenKruise 能够帮你把这些Sidecar 容器注入到所有符合条件的 Pod 中。这个过程和 Istio 的注入很相似，但是你可以管理任意你关心的 Sidecar</p>
+<li><p>Sidecar 管理：支持在一个单独的 CR 中定义 sidecar 容器，OpenKruise 能够帮你把这些 Sidecar 容器注入到所有符合条件的 Pod 中。这个过程和 Istio 的注入很相似，但是你可以管理任意你关心的 Sidecar</p>
 </li>
-<li><p>跨多可用区部署：定义一个跨多个可用区的全局workload、容器，OpenKruise 会帮你在每个可用区创建一个对应的下属 workload。你可以统一管理 workload 的副本数、版本、甚至针对不同可用区采用不同的发布策略</p>
+<li><p>跨多可用区部署：定义一个跨多个可用区的全局 workload、容器，OpenKruise 会帮你在每个可用区创建一个对应的下属 workload。你可以统一管理 workload 的副本数、版本、甚至针对不同可用区采用不同的发布策略</p>
 </li>
 <li><p>镜像预热：支持用户指定在任意范围的节点上下载镜像</p>
 </li>
 </ul>
-<h1 id="CRD列表"><a href="#CRD列表" class="headerlink" title="CRD列表"></a>CRD列表</h1><ul>
+<h1 id="CRD-列表"><a href="#CRD-列表" class="headerlink" title="CRD 列表"></a>CRD 列表</h1><ul>
 <li><p>CloneSet<br>  提供更加高效、确定可控的应用管理和部署能力，支持优雅原地升级、指定删除、发布顺序可配置、并行/灰度发布等丰富的策略，可以满足更多样化的应用场景</p>
 </li>
 <li><p>Advanced StatefulSet<br>  基于原生 StatefulSet 之上的增强版本，默认行为与原生完全一致，在此之外提供了原地升级、并行发布（最大不可用）、发布暂停等功能</p>
