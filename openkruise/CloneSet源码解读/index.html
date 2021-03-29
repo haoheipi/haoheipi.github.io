@@ -176,7 +176,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="1">
-<input type="hidden" id="yelog_site_word_count" value="0">
+<input type="hidden" id="yelog_site_word_count" value="77">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -274,12 +274,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-03-29 23:31:57'>2021-03-29 23:16</time>
+            发布时间 : <time class="date" title='最后更新: 2021-03-30 00:01:31'>2021-03-29 23:16</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:0</span>
+        <span>字数:77</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -298,7 +298,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D"><span class="toc-text">背景介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E5%88%86%E6%9E%90"><span class="toc-text">功能分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A9%E7%BC%A9%E5%AE%B9%E5%8A%9F%E8%83%BD"><span class="toc-text">扩缩容功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%AF%E6%8C%81-PVC-%E6%A8%A1%E6%9D%BF"><span class="toc-text">支持 PVC 模板</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A-Pod-%E7%BC%A9%E5%AE%B9"><span class="toc-text">指定 Pod 缩容</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E5%8A%9F%E8%83%BD"><span class="toc-text">升级功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%9C%B0%E5%8D%87%E7%BA%A7"><span class="toc-text">原地升级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Template-%E5%92%8C-revision"><span class="toc-text">Template 和 revision</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Partition-%E5%88%86%E6%89%B9%E7%81%B0%E5%BA%A6"><span class="toc-text">Partition 分批灰度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MaxUnavailable-%E6%9C%80%E5%A4%A7%E4%B8%8D%E5%8F%AF%E7%94%A8%E6%95%B0%E9%87%8F"><span class="toc-text">MaxUnavailable 最大不可用数量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MaxSurge-%E6%9C%80%E5%A4%A7%E5%BC%B9%E6%80%A7%E6%95%B0%E9%87%8F"><span class="toc-text">MaxSurge 最大弹性数量</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E9%A1%BA%E5%BA%8F"><span class="toc-text">升级顺序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E5%85%88%E7%BA%A7%E7%AD%96%E7%95%A5"><span class="toc-text">优先级策略</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%93%E6%95%A3%E7%AD%96%E7%95%A5"><span class="toc-text">打散策略</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E5%B8%83%E6%9A%82%E5%81%9C"><span class="toc-text">发布暂停</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90"><span class="toc-text">生命周期钩子</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -314,7 +314,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p><div class='inner-toc'><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D"><span class="toc-text">背景介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E5%88%86%E6%9E%90"><span class="toc-text">功能分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A9%E7%BC%A9%E5%AE%B9%E5%8A%9F%E8%83%BD"><span class="toc-text">扩缩容功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%AF%E6%8C%81-PVC-%E6%A8%A1%E6%9D%BF"><span class="toc-text">支持 PVC 模板</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A-Pod-%E7%BC%A9%E5%AE%B9"><span class="toc-text">指定 Pod 缩容</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E5%8A%9F%E8%83%BD"><span class="toc-text">升级功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%9C%B0%E5%8D%87%E7%BA%A7"><span class="toc-text">原地升级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Template-%E5%92%8C-revision"><span class="toc-text">Template 和 revision</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Partition-%E5%88%86%E6%89%B9%E7%81%B0%E5%BA%A6"><span class="toc-text">Partition 分批灰度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MaxUnavailable-%E6%9C%80%E5%A4%A7%E4%B8%8D%E5%8F%AF%E7%94%A8%E6%95%B0%E9%87%8F"><span class="toc-text">MaxUnavailable 最大不可用数量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MaxSurge-%E6%9C%80%E5%A4%A7%E5%BC%B9%E6%80%A7%E6%95%B0%E9%87%8F"><span class="toc-text">MaxSurge 最大弹性数量</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E9%A1%BA%E5%BA%8F"><span class="toc-text">升级顺序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E5%85%88%E7%BA%A7%E7%AD%96%E7%95%A5"><span class="toc-text">优先级策略</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%93%E6%95%A3%E7%AD%96%E7%95%A5"><span class="toc-text">打散策略</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E5%B8%83%E6%9A%82%E5%81%9C"><span class="toc-text">发布暂停</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90"><span class="toc-text">生命周期钩子</span></a></li></ol></li></ol></div></p>
+<h2 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h2><h2 id="功能分析"><a href="#功能分析" class="headerlink" title="功能分析"></a>功能分析</h2><h3 id="扩缩容功能"><a href="#扩缩容功能" class="headerlink" title="扩缩容功能"></a>扩缩容功能</h3><h4 id="支持-PVC-模板"><a href="#支持-PVC-模板" class="headerlink" title="支持 PVC 模板"></a>支持 PVC 模板</h4><h4 id="指定-Pod-缩容"><a href="#指定-Pod-缩容" class="headerlink" title="指定 Pod 缩容"></a>指定 Pod 缩容</h4><h3 id="升级功能"><a href="#升级功能" class="headerlink" title="升级功能"></a>升级功能</h3><h4 id="原地升级"><a href="#原地升级" class="headerlink" title="原地升级"></a>原地升级</h4><h4 id="Template-和-revision"><a href="#Template-和-revision" class="headerlink" title="Template 和 revision"></a>Template 和 revision</h4><h4 id="Partition-分批灰度"><a href="#Partition-分批灰度" class="headerlink" title="Partition 分批灰度"></a>Partition 分批灰度</h4><h4 id="MaxUnavailable-最大不可用数量"><a href="#MaxUnavailable-最大不可用数量" class="headerlink" title="MaxUnavailable 最大不可用数量"></a>MaxUnavailable 最大不可用数量</h4><h4 id="MaxSurge-最大弹性数量"><a href="#MaxSurge-最大弹性数量" class="headerlink" title="MaxSurge 最大弹性数量"></a>MaxSurge 最大弹性数量</h4><h3 id="升级顺序"><a href="#升级顺序" class="headerlink" title="升级顺序"></a>升级顺序</h3><h4 id="优先级策略"><a href="#优先级策略" class="headerlink" title="优先级策略"></a>优先级策略</h4><h4 id="打散策略"><a href="#打散策略" class="headerlink" title="打散策略"></a>打散策略</h4><h3 id="发布暂停"><a href="#发布暂停" class="headerlink" title="发布暂停"></a>发布暂停</h3><h3 id="生命周期钩子"><a href="#生命周期钩子" class="headerlink" title="生命周期钩子"></a>生命周期钩子</h3>
       
        
     </div>
